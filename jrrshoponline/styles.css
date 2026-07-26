@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+        background-color: #461B7E;
+        padding: 30px;
+}
+h1{
+        text-align: center;
+        color: white;
+}
+    
+menu ul{
+        background-color: #7A5DC7;
+        padding: 20px;
+        list-style-type: none;
+        overflow: hidden;
+        color: white;
+}
+menu ul li{
+        float: left;
+        margin: 25px;
+}
+menu a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        border-radius: 20px;
+        padding: 4px 8x;
+}
+nav{
+        float: left;
+        width: 25%;
+        background-color: #9370DB;
+        padding: 30px;
+        min-height: 400px;
+}
+nav ul{
+        list-style-type: none;
+}
+nav a{
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        display: block;
+        font-weight: bold;
+        padding: 10px;
+}
+article{
+        float: left;
+        padding: 20px;
+        width: 75%;
+        background-color: #DCD0FF;
+        min-height: 400px;
+        overflow: hidden;
+}
+article H2{
+        text-align: center;
+}
+article p{
+        text-align: center;
+        font-size: 20px;
+}
+footer{
+        clear: both;
+        background-color: #CCCCFF;
+        padding: 10px;
+        text-align: center;
+        color: black;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+  }
+}
+.product-cardindex{
+        float: left;
+        width: 210px;
+        height: 330px;
+        margin: 30px;
+        text-align: center;
+}
+.product-cardindex img{
+        width: 150px;
+        height: 150px;
+}
+.product-card{
+        float: left;
+        width: 250px;
+        height: 330px;
+        margin: 30px;
+        text-align: center;
+}
+.product-card img{
+        width: 150px;
+        height: 150px;
+}
+
+.product-group{
+        clear: both;
+        margin-bottom: 30px;
+        overflow: hidden;
+}
+.product-group H2{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        scroll-margin-top: 120px;
+}
+.product-detail{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+}
+.detail-image{
+        float: left;
+        width: 45%;
+        padding: 10px;
+        text-align: center;
+}
+.detail-image img{
+        width: 100%;
+        height: 250;
+}
+.detail-info{
+        float: left;
+        text-align: left;
+        width: 50%;
+        padding: 10px;
+}
+.buy-product{
+        display: inline-block;
+        background-color: aliceblue;
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+}
+table{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        background-color: white;
+        border-collapse: collapse;
+}
+table, th, td {
+        border: 1px solid black;
+        padding: 6px;
+        text-align: center;
+}
+table th{
+        background-color: #461B7E;
+        color: white;
+}
+.total-row{
+        background-color: lightcoral;
+        font-weight: bold;
+}
+.total-label{
+        text-align: right;
+        padding: 10px;
+}
+.total-amount{
+        color: white;
+}
+.confirm-product{
+        display: inline-block;
+        background-color: aliceblue;
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+}
+.gohome{
+        display: inline-block;
+        background-color: aliceblue;
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 15px;
+}
+.order-table{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        background-color: white;
+        border-collapse: collapse;
+}
+.oreder-table, .order-table tr, .order-table td{
+        border: none;
+        padding: 5px 10px;
+        background: transparent;
+        text-align: left;
+}
+.success{
+        background-color: aliceblue;
+        width: 90%;
+        border-radius: 12px;
+        text-align: center;
+        box-sizing: border-box;
+}
+.thx{
+        text-align: center;
+        color: red;
+}
+.text{
+        text-align: center;
+}
