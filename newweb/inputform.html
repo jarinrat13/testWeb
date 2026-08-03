@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="css/styleForm.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            background-color: pink;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        article{
+            float: left;
+            width: 70%;
+            height: auto;
+            padding: 20px;
+            background-color: skyblue;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: auto;
+            padding: 20px;
+            background-color: yellow;
+        }
+        nav ul{
+            list-style-type: circle;
+            padding: 0;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(187, 150, 215);
+        }
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: 300px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <header> HEADER </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="layout.html">layout</a></li>
+                <li><a href="inputform.html">input Form</a></li>
+                <li><a href="https://kmutnb.ac.th/"> KMUTNB </a></li>
+                <li><a href="https://www.fitm.kmutnb.ac.th/"> FITM </a></li>
+                <li><a href="https://www.facebook.com/oil.jarinrat"> FACEBOOK </a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>รับสมัครนักศึกษาใหม่</h2>
+            <form action="#">
+                <label for="">Username :</label><br>
+                <input type="text" name="" id="" required><br><br>
+                <label for="">Password :</label><br>
+                <input type="password" name="" id="" required><br><br>
+                <label for="">Email :</label><br>
+                <input type="email" name="" id="" required><br>
+
+                <label for="phone">เบอร์โทรติดต่อ :</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <br>
+                
+                <label for="birthday">Birthday: </label>
+                <input type="date" id="birthday" name="birthday">
+                <br>
+                <label for="appt">เวลาเกิด :</label>
+                <input type="time" id="appt" name="appt">
+                <br>
+
+                <label>Facebook : </label>
+                <input type="url">
+                <br>
+
+                <label for="myfile">ใส่รูปภาพนักศึกษา: </label>
+                <input type="file" id="myfile" name="myfile">
+                <br>
+                <label>น้ำหนัก (กก.):</label>
+                <input type="number" min="20" max="200">
+                <br>
+                <label>ส่วนสูง (ซม.):</label>
+                <input type="number" min="100" max="200">
+                <br><br>
+
+                <!-- Radio -->
+                <input type="radio" name="Graduated" value="ม.6">
+                    <label>ม.6</label><br>
+                <input type="radio" name="Graduated" value="ปวช.">
+                    <label>ปวช.</label><br>
+                <input type="radio" name="Graduated" value="ปวส.">
+                    <label>ปวส.</label><br>
+                <input type="radio" name="Graduated" value="อนุปริญญา">
+                    <label>อนุปริญญา</label><br>
+                <br><br>
+
+                <!-- Checkbox -->
+                <input type="checkbox"name="Major1" value="IT">
+                    <label>IT</label><br>
+                <input type="checkbox"name="Major2" value="ITT">
+                    <label>ITT</label><br>
+                <input type="checkbox"name="Major3" value="ITI">
+                    <label>ITI</label><br>
+                <input type="checkbox"name="Major4" value="INE">
+                    <label>INE</label><br>
+                <input type="checkbox"name="Major5" value="INET">
+                    <label>INET</label><br>
+
+                <label for="vol">จะเรียนจบปีไหน (between 2569 and 2590):</label>
+                <input type="range" min="2569" max="2590">
+                <br>
+
+                <label for="gsearch">Search Google:</label>
+                <input type="search" id="gsearch" name="gsearch">
+                <br><br>
+
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+
+                
+                <br><br>
+                <input type="button" value="Submit" class="btn btn-success">
+                <input type="reset" value="Reset" class="btn btn-danger">
+            </form>
+        </article>
+            
+    </section>
+    <footer> FOOTER </footer>
+
+</body>
+</html>
