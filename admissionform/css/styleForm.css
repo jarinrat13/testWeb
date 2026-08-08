@@ -1,0 +1,111 @@
+form {
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+body{
+  background-color: #F8FAFC;
+  color: #334155;
+  margin: 0;
+}
+input[type=text], input[type=tel], input[type=email], select {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0 16px 0;
+  display: inline-block;
+  border: 1px solid #CBD5E1;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+input[type=number], input[type=date], select {
+  width: 30%;
+  min-width: 140px;
+  padding: 10px 12px;
+  margin: 8px 0 16px 0;
+  display: inline-block;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+input[type=radio], input[type=checkbox], select {
+  accent-color: #1E3A8A;
+  cursor: pointer;
+  transform: scale(1.4);
+  margin-bottom: 20px;
+  margin: 8px;
+}
+label{
+  cursor: pointer;
+}
+input[type=file], select{
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  background-color: #F8FAFC;
+  border: 1px border-solid #CBD5E1;
+  border-radius: 10px;
+  color: #64748B;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+input[type=file]::file-selector-button {
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 12px;
+}
+input[type=submit]{
+  background-color: #1E3A8A;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 20px;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
+}
+input[type=reset]{
+  background-color: #F1F5F9;
+  border-radius: 10px;
+  color: #64748B;
+  border: 1px solid #CBD5E1;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 20px;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
+}
+input[type="submit"]:hover {
+    background-color: #2563EB;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
+input[type="reset"]:hover {
+    background-color: #FEE2E2;
+    color: #EF4444;
+    border-color: #FCA5A5;
+    transform: translateY(-2px);
+}
+.section1, .section2, .section3, .section4, .section5, .section6, .section7{
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.3);
+  border: 1px solid #E2E8F0;
+  margin-bottom: 25px;
+}
+.section1 h3, .section2 h3, .section3 h3, .section4 h3, .section5 h3, .section6 h3, .section7 h3{
+  text-align: center;
+  color: #1E3A8A;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #E2E8F0;
+}

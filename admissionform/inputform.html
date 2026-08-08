@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="css/styleForm.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #0F172A;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        article{
+            float: left;
+            width: 70%;
+            height: auto;
+            padding: 20px;
+            background-color: #F8FAFC;
+        }
+        article h2{
+            text-align: center;
+            padding: 10px;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: auto;
+            padding: 20px;
+            background-color: #E2E8F0;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li{
+            margin-bottom: 10px;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        a{
+            text-decoration: none;
+            color: #1E3A8A;
+            padding: 10px 15px;
+            display: block;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+        a:hover{
+            background-color: #DBEAFE;
+            color: #0F172A;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background-color: #0F172A;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <header>รับสมัครนักศึกษาใหม่</header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#info">ข้อมูลส่วนตัวของผู้สมัคร</a></li>
+                <li><a href="#contact">ข้อมูลการติดต่อ</a></li>
+                <li><a href="#education">ประวัติการศึกษาเดิม</a></li>
+                <li><a href="#appdetail">ข้อมูลการสมัครและสาขาวิชาที่เลือก</a></li>
+                <li><a href="#parentinfo">ข้อมูลบิดา มารดา และผู้ปกครอง</a></li>
+                <li><a href="#docuploads">เอกสารหลักฐานที่ต้องแนบ</a></li>
+                <li><a href="#consent">การยินยอมและรับรองข้อมูล</a></li>
+            </ul>
+        </nav>
+        <article>
+            <form action="#">
+                <div class="section1">
+                    <h3 id="info">ส่วนที่ 1 ข้อมูลส่วนตัวของผู้สมัคร</h3><br>
+                    <label for="">คำนำหน้าชื่อ :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="Title" value="Mr">
+                        <label>นาย</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="Title" value="Mrs">
+                        <label>นาง</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="Title" value="Miss">
+                        <label>นางสาว</label><br>
+                    
+                    <label for="">ชื่อ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">นามสกุล :</label>
+                    <input type="text" name="" id="" required><br>
+
+                    <label for="birthday">เพศ : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="Gender" value="Male">
+                        <label>ชาย</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="Gender" value="Female">
+                        <label>หญิง</label><br>
+
+                    <label for="">เลขประจำตัวประชาชน :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="birthday">วันเกิด : </label>
+                    <input type="date" id="birthday" name="birthday"><br>
+                    <label for="">อายุ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">สัญชาติ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">เชื้อชาติ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">ศาสนา :</label>
+                    <input type="text" name="" id="" required><br>
+
+                    <label for="">กลุ่มเลือด :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="BloodGroup" value="A">
+                        <label>A</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="BloodGroup" value="B">
+                        <label>B</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="BloodGroup" value="AB">
+                        <label>AB</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="BloodGroup" value="O">
+                        <label>O</label><br>
+
+                    <label>น้ำหนัก (กก.) :</label>
+                    <input type="number" min="20" max="200"><br>
+                    <label>ส่วนสูง (ซม.) :</label>
+                    <input type="number" min="100" max="200">
+                    <br>
+
+                    <label for="">โรคประจำตัว (ถ้ามี) :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">ความพิการ (ถ้ามี) :</label>
+                    <input type="text" name="" id="" required>
+                    <br><br>
+                </div>
+
+
+
+                <div class="section2">
+                    <h3 id="contact">ส่วนที่ 2 ข้อมูลการติดต่อ</h3><br>
+                    <label for="">ที่อยู่ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="phone">เบอร์โทรติดต่อ :</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+                    <label for="">Email :</label><br>
+                    <input type="email" name="" id="" required>
+                    <br><br>
+                </div>
+
+                
+                <div class="section3">
+                    <h3 id="education">ส่วนที่ 3 ประวัติการศึกษาเดิม</h3>
+                    <label for="">วุฒิการศึกษา :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="Graduated" value="ม.6">
+                        <label>ม.6</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="Graduated" value="ปวช.">
+                        <label>ปวช.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="Graduated" value="ปวส.">
+                        <label>ปวส.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="Graduated" value="กศน.">
+                        <label>กศน.</label><br>
+
+                    <label for="">สถานศึกษา :</label><br>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">จังหวัด :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">สายการเรียนหรือสาขาวิชา :</label>
+                    <input type="text" name="" id="" required>
+                    <br><br>
+                </div>
+
+                
+
+                <div class="section4">
+                    <h3 id="appdetail">ส่วนที่ 4 ข้อมูลการสมัครและสาขาวิชาที่เลือก</h3><br>
+                    <label>รอบการรับสมัคร</label><br>
+                    <input type="radio" name="Admission" value="Tcas1">
+                        <label>TCAS 1 Portfolio</label><br> 
+                    <input type="radio" name="Admission" value="Tcas2">
+                        <label>TCAS 2 Quota</label><br>
+                    <input type="radio" name="Admission" value="Tcas3">
+                        <label>TCAS 3 Admission</label><br>
+                    <input type="radio" name="Admission" value="Tcas4">
+                        <label>TCAS 3 Direct Admission</label><br><br>
+                    
+                    <label>สาขาวิชาที่ต้องการสมัคร</label><br>
+                    <input type="checkbox"name="Major1" value="IT">
+                        <label>IT</label><br>
+                    <input type="checkbox"name="Major2" value="ITT">
+                        <label>ITT</label><br>
+                    <input type="checkbox"name="Major3" value="ITI">
+                        <label>ITI</label><br>
+                    <input type="checkbox"name="Major4" value="INE">
+                        <label>INE</label><br>
+                    <input type="checkbox"name="Major5" value="INET">
+                        <label>INET</label>
+                    <br><br>
+                </div>
+
+
+
+                <div class="section5">
+                    <h3 id="parentinfo">ส่วนที่ 5 ข้อมูลบิดา มารดา และผู้ปกครอง</h3><br>
+                    <h5>ข้อมูลบิดา</h5>
+                    <label for="">คำนำหน้าชื่อ : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="FatherTitle" value="Mr">
+                        <label>นาย</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="FatherTitle" value="Mrs">
+                        <label>นาง</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="FatherTitle" value="Miss">
+                        <label>นางสาว</label><br>
+                    
+                    <label for="">ชื่อ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">นามสกุล :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">อาชีพ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">สถานที่ทำงาน :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="phone">เบอร์โทรศัพท์ :</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    <br><br>
+
+                    <h5>ข้อมูลมารดา</h5>
+                    <label for="">คำนำหน้าชื่อ : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="MotherTitle" value="Mr">
+                        <label>นาย</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="MotherTitle" value="Mrs">
+                        <label>นาง</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="MotherTitle" value="Miss">
+                        <label>นางสาว</label><br>
+                    
+                    <label for="">ชื่อ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">นามสกุล :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">อาชีพ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">สถานที่ทำงาน :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="phone">เบอร์โทรศัพท์ :</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    <br><br>
+
+                    <h5>ข้อมูลผู้ปกครอง (กรณีไม่ใช่บิดา มารดา)</h5>
+                    <label for="">คำนำหน้าชื่อ : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="GuardianTitle" value="Mr">
+                        <label>นาย</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="GuardianTitle" value="Mrs">
+                        <label>นาง</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="GuardianTitle" value="Miss">
+                        <label>นางสาว</label><br>
+                    
+                    <label for="">ชื่อ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">นามสกุล :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">มีความสัมพันธ์ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">อาชีพ :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="">สถานที่ทำงาน :</label>
+                    <input type="text" name="" id="" required><br>
+                    <label for="phone">เบอร์โทรศัพท์ผู้ปกครองที่ติดต่อได้สะดวก :</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    <br><br>
+                </div>
+
+
+
+                <div class="section6">
+                    <h3 id="docuploads">ส่วนที่ 6 เอกสารหลักฐานที่ต้องแนบ</h3><br>
+                    <label for="filePicture">รูปภาพนักศึกษา (ถ่ายไว้ไม่เกิน 6 เดือน) : </label>
+                    <input type="file" id="filePicture" name="Picture"><br>
+                    <label for="fileTranscript">สำเนาใบแสดงผลการเรียน (ปพ.1 หรือ Transcript) : </label>
+                    <input type="file" id="fileTranscript" name="Transcript"><br>
+                    <label for="fileCopyIDcard">สำเนาบัตรประชาชน : </label>
+                    <input type="file" id="fileCopyIDcard" name="CopyIDcard"><br>
+                    <label for="fileCopyhouse">สำเนาทะเบียนบ้าน : </label>
+                    <input type="file" id="fileCopyhouse" name="Copyhouse"><br>
+                    <label for="filePortfolio">แฟ้มสะสมผลงานหรือ Portfolio (กรณีรอบที่กำหนด) : </label>
+                    <input type="file" id="filePortfolio" name="Portfolio"><br>
+                    <label for="fileScoretest">คะแนนสอบกลาง (TGAT/TPAT , A-Level หรือคะแนนวัดระดับอื่น ๆ ตามสาขากำหนด) : </label>
+                    <input type="file" id="fileScoretest" name="Scoretest">
+                    <br><br>
+                </div>
+
+
+
+                <div class="section7">
+                    <h3 id="consent">ส่วนที่ 7 การยินยอมและรับรองข้อมูล</h3><br>
+                    <input type="checkbox"name="Consent" value="Consent1">
+                        <label>การยินยอมให้ใช้ข้อมูลส่วนบุคคล (PDPA Consent)</label><br>
+                    <input type="checkbox"name="Consent" value="Consent2">
+                        <label>ข้าพเจ้าขอรับรองว่าข้อความทั้งหมดเป็นความจริง หากตรวจสอบพบว่าเป็นเท็จ ยินยอมให้ตัดสิทธิ์การเข้าศึกษาทันที</label>
+                    <br><br>
+                </div>
+
+                
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </article>
+            
+    </section>
+    <footer>ติดต่อสอบถามเพิ่มเติม : 011-1111-111</footer>
+
+</body>
+</html>
