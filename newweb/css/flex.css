@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    width: 600px;
+    height: 400px;
+    border: 2px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+.items{
+    width: 60px;
+    height: auto;
+    background-color: red;
+    border: 1px solid black;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+@media (max-width:500px){
+    .flex-container{
+        flex-direction: column;
+    }
+}

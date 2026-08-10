@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(185, 215, 255);
+}
+/* class selector */
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.font1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.size1{
+    font-size: 80px;
+    font-weight: bold;
+}
+/* id selector */
+#green{
+    color: green;
+}

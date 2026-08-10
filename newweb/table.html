@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+        <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            background-color: pink;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        article{
+            float: left;
+            width: 70%;
+            height: auto;
+            padding: 20px;
+            background-color: skyblue;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: auto;
+            padding: 20px;
+            background-color: yellow;
+        }
+        nav ul{
+            list-style-type: circle;
+            padding: 0;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(187, 150, 215);
+        }
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: 300px;
+            }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th{
+            background-color: green;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        }
+       
+    </style>
+</head>
+<body>
+    <header> HEADER </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="layout.html">layout</a></li>
+                <li><a href="inputform.html">input Form</a></li>
+                <li><a href="https://kmutnb.ac.th/"> KMUTNB </a></li>
+                <li><a href="https://www.fitm.kmutnb.ac.th/"> FITM </a></li>
+                <li><a href="https://www.facebook.com/oil.jarinrat"> FACEBOOK </a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>table.html</h1>
+            <table border="1" width="80%">
+                <tr>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                    <th>Col 3</th>
+                    <th>Col 4</th>
+                </tr>
+                <tr>
+                    <td colspan="2">1 , 2</td>
+                    <!-- <td>2</td> -->
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">5 <br> 9</td>
+                    <td>6</td>
+                    <td colspan="2" rowspan="2">7 , 8 <br> 11 , 12</td>
+                    <!-- <td>8</td> -->
+                </tr>
+                <tr>
+                    <!-- <td>9</td> -->
+                    <td>10</td>
+                    <!-- <td>11</td> -->
+                    <!-- <td>12</td> -->
+                </tr>
+            </table>
+        </article>
+             </section>
+    <footer> FOOTER </footer>
+</body>
+</html>
